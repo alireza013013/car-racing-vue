@@ -6,38 +6,38 @@ export default [
     {
         name: 'perlinNoiseTexture',
         type: 'texture',
-        path: "./car-racing/perlin.png"
+        path: "/car-racing/perlin.png"
     },
 
     // cloud source
     {
         name: 'cloudGLTFModel',
         type: 'gltfModel',
-        path: "./car-racing/cloud.glb"
+        path: "/car-racing/cloud.glb"
     },
     {
         name: 'cloudBakedTexture',
         type: 'texture',
-        path: "./car-racing/bakedCloud.jpg"
+        path: "/car-racing/bakedCloud.jpg"
     },
 
     // tree source
     {
         name: 'treeGLTFModel',
         type: 'gltfModel',
-        path: "./car-racing/tree.glb"
+        path: "/car-racing/tree.glb"
     },
     {
         name: 'treeBakedTexture',
         type: 'texture',
-        path: "./car-racing/bakedTreeTexture.jpg"
+        path: "/car-racing/bakedTreeTexture.jpg"
     },
 
     // car source
     {
         name: 'carGLTFModel',
         type: 'gltfModel',
-        path: "./car-racing/car.glb"
+        path: "/car-racing/car.glb"
     },
 
 
@@ -45,6 +45,6 @@ export default [
     {
         name: 'fontLevel',
         type: 'font',
-        path: "./car-racing/helvetiker_regular.typeface.json"
+        path: "/car-racing/helvetiker_regular.typeface.json"
     }
 ]

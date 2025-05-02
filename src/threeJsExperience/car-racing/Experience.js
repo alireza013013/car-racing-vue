@@ -90,7 +90,7 @@ export default class Experience {
 
 
             // car
-            carBaseSpeed: 4,
+            carBaseSpeed: 3,
             offsetXStart: 15,
             laneLerpSpeed: 3,
             distanceCameraFromCar: window.innerWidth < 480 ? 12 : 7,
@@ -104,7 +104,8 @@ export default class Experience {
 
 
             // levels questions
-            questions: questions
+            questions: questions,
+            distanceFromEndRoadQuestion: 40
         }
 
 
@@ -146,13 +147,8 @@ export default class Experience {
                 this.renderer.update()
                 this.world.update()
             }
+            this.callBacks.onChangeSceneReady()
         })
-
-        if (sources.length == 0) {
-            this.world = new World()
-        }
-
-
     }
 
     changeLane(direction) {
@@ -163,6 +159,10 @@ export default class Experience {
 
     setPlayingStatus(statusGame) {
         this.isPlayingGame = statusGame
+    }
+
+    changeCameraMode(mode) {
+        this.camera.cameraMode = mode
     }
 
     resetGame() {
